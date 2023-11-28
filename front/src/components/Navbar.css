@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+
+/* estilos del nav bar */
+.Link {
+    text-decoration: none;
+    color: black;
+}
+
+.Nav_bar {
+    
+    background-color: #eaf2f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    
+}
+
+.container_nav_item ul {
+    display: flex;
+    list-style-type: none;
+    
+    
+    
+
+}
+
+.container_nav_item ul li {
+    text-decoration: none;
+    color: #1c1c1c;
+    padding-right: 25px;
+    /* justify-content: center; */
+    
+}
+
+
+#abrir {
+    display: none;
+}
+
+
+@media screen and (max-width: 850px) {
+    #abrir {
+        display: block;
+        border: none;
+    }
+
+
+
+
+    .boton-busqueda {
+        display: none;
+    }
+
+    .abrir_menu {
+        display: block;
+        border: none;
+        text-decoration: none;
+        background-color: #eaf2f0;
+
+    }
+
+
+    .nav_visible {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        font-size: 1.8rem;
+        background-color: #eaf2f0;
+        flex-direction: column;
+        position: absolute;
+        padding: 2rem;
+        top: 0;
+        left: 0;
+        align-items: start;
+        gap: 1rem;
+        margin-top: 5rem;
+        z-index: 1;
+
+    }
+
+    .container_nav_item {
+        display: none;
+        opacity: 0;
+
+    }
+
+    .nav {
+        font-size: 1.8rem;
+        list-style-type: none;
+
+    }
+
+    .container_nav_item ul {
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+    /* estilo de imgs */
+    .logo img {
+        max-width: 10rem;
+
+    }
+
+    .carrito img {
+        max-width: 3rem;
+    }
+
+    .buscar img {
+        max-width: 1rem;
+        background-color: #eaf2f0;
+    }
+
+    /* boton de hamburguesa */
+    button img {
+        width: 2rem;
+        background-color: #eaf2f0;
+    }
+
+}
+
+
+
+@media (min-width: 851px) {
+
+    * {
+        align-items: center;
+    }
+
+
+    .Nav_bar {
+        flex-direction: top;
+        display: flex;
+        justify-content: space-between;
+        /* pone los elementos en las puntas */
+        align-items: center;
+        /* centra vertical */
+        background-color: #eaf2f0;
+        
+    }
+
+    .nav_visible {
+        padding-right: 7%;
+        display: flex;
+        justify-content: center;
+        /* centra horizontal */
+        align-items: center;
+        /* Centra verticalmente */
+    }
+
+    .logo {
+        /* con esto podes pasar la imagen del centro a la izquierda*/
+        order: -1;
+    }
+    
+    /* Estilos para el logo) */
+    .logo img{
+        width: 190px;
+    } 
+
+    /* estilos para el carrito */
+    .carrito {
+        max-width: 2rem;
+        cursor: pointer;
+    }
+
+    /* Estilos para la lista ul destokp */
+    .nav {
+        
+        list-style: none;
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+    }
+
+
+
+    .nav li {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.6rem;
+        text-align: center;
+        color: #fff;
+    }
+
+}

@@ -1,0 +1,265 @@
+body {
+  background-color: #dee7e3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+/* Estilos para la barra lateral de filtrado */
+.sidebar {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* Estilos para la lista de productos */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Cambia el número de columnas según necesites */
+  grid-gap: 20px;
+
+
+
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: white;
+  margin: 10px;
+  width: 80%;
+  height: auto;
+  /* Cambiado a altura automática */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+
+
+
+}
+
+@media (min-width: 768px) {
+
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product-card:hover {
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, 0.26);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  transition: 0.3s opacity;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 8px 0;
+  font-weight: 400;
+}
+
+.product-card p {
+
+  margin: 8px 0;
+  /* overflow: hidden; */
+}
+
+
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  /*     white-space: nowrap; 
+    overflow: hidden; */
+
+
+
+}
+
+/* Estilo para el div de paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /* Espacio superior para separarlo del contenido anterior */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+/* Estilo para los botones de paginación */
+.pagination button {
+  background-color: #647486;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+
+/* Estilo para los botones de paginación cuando se les pasa el cursor */
+.pagination button:hover {
+  background-color: #b1c4bb;
+  color: black;
+}
+
+
+
+/* Estilos para la barra de búsqueda */
+.search-container {
+  border: solid #b1c4bb 1px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Estilos para el botón de orden alfabético */
+.sidebar button {
+  background-color: #889c93;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: 100;
+  transition: background-color 0.3s;
+}
+
+.sidebar button:active {
+  background-color: #889c93;
+}
+
+.sidebar button:hover {
+  background-color: #b1c4bb;
+  color: black;
+  font-weight: 100;
+}
+
+.img-stack {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-stack img {
+
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+
+
+
+}
+
+
+@media (min-width: 851px) {
+
+
+  .container {
+    display: flex;
+    /* Cambia a flexbox */
+    margin: 20px;
+  }
+
+  .sidebar {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-right: 20px;
+    /* Añade margen derecho para separar el menú de los productos */
+    background-color: white;
+    width: 30%;
+
+
+  }
+
+
+
+  /* Estilos para el botón de orden alfabético */
+  .sidebar button {
+    background-color: #889c93;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 100;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+
+  .img-stack {
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+  }
+
+  .img-stack img {
+    padding-bottom: 5px;
+    align-items: center;
+  }
+
+
+
+  .product-list {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    column-gap: 1px;
+
+  }
+
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+    margin: 10px;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    cursor: pointer;
+
+  }
+
+
+
+}

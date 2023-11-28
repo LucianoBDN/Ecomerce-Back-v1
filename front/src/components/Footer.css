@@ -1,0 +1,124 @@
+Footer {
+    background-color: #232323;
+}
+
+@media (max-width: 850px) {
+    .Contactos {
+        display: flex;
+        
+        justify-content: space-between;
+        
+        align-items: flex-start;
+        
+    }
+
+    .lista-footer,
+    .lista2-footer {
+        padding: 1rem;
+        
+        margin: 1rem;
+        
+        list-style-type: none;
+        
+    }
+
+    
+    .lista-footer li,
+    .lista2-footer li {
+        margin-bottom: 0.4rem;
+        font-size: 1.1rem;
+        
+        color: #fff;
+        
+    }
+
+
+    .icons-redes{
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        gap: 1rem;
+    }
+    i{
+        font-size: 2rem;
+    }
+
+    .copyright {
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        padding: 1rem;
+    }
+    
+
+}
+
+
+@media (min-width: 851px) {
+
+    footer{
+        display: flex;
+        padding: 3rem;
+        justify-content: center;
+        
+    }
+
+    .Contactos {
+        display: flex;
+        
+        
+        
+        align-items: flex-start;
+        
+    }
+
+    .lista-footer,
+    .lista2-footer {
+        padding: 2rem;
+        
+        
+        margin: 1rem;
+        
+        list-style-type: none;
+        
+        
+    }
+
+    
+    .lista-footer li,
+    .lista2-footer li {
+        margin-bottom: 0.4rem;
+        font-size: 1.1rem;
+        
+        color: #fff;
+        
+    }
+
+
+    .icons-redes{
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        gap: 2rem;
+    }
+    i{
+        font-size: 2rem;
+        
+    }
+
+    .copyright {
+        align-items: flex-end;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        padding: 1rem;
+        
+
+    }
+    
+    .final {
+        margin-left: 30%;
+    }
+}
